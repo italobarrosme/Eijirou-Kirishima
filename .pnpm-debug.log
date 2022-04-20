@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: jest",
+      "code": "ENOENT",
+      "stack": "Error: not found: jest\n    at getNotFoundError (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:41653:51)\n    at Function.whichSync [as sync] (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:41730:13)\n    at getCommandAbsolutePathSync (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:43295:44)\n    at default_1 (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:43304:32)\n    at C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:178561:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "C:\\Users\\ivrb\\Documents\\workspace\\PESSOAL\\study-jest",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: jest",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: jest\n    at getNotFoundError (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:41653:51)\n    at Function.whichSync [as sync] (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:41730:13)\n    at getCommandAbsolutePathSync (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:43295:44)\n    at default_1 (C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:43304:32)\n    at C:\\Users\\ivrb\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@6.32.8\\node_modules\\pnpm\\dist\\pnpm.cjs:178561:39"
+    }
+  }
+}
