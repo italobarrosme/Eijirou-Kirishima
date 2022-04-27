@@ -1,6 +1,6 @@
 # Estudo de testes
 
-## Primeiro teste criado
+## Primeiro teste criado Mao na massa!
 
 - Feito a instalacao do jest `pnpm i jest @types/jest -D`
 - Os arquivos de testes sao buscados atraves de expressoes regulares
@@ -43,3 +43,97 @@
 - Usado o metodo `fit()` do jest para rodar apenas o `f + it()` em questao
 
 - instalado o ndb node.js para debugar,
+
+## Porque testar ?
+
+### "É impensavel desenvolver profissionalmente sem incluir testes" - vedovelli
+
+- Confiança ao refatorar
+- Confianca ao incluir novas funcionalidades
+  - Ideal e comecar utilizando o TDD, comecar com testes
+- Confianca ao atualizar dependencias, no javascript as dependencias ficam obsoletas muito rapidas
+- Facilita a compreensao da implementacao
+- Funciona como documentacao das funcionalidades
+
+## O que testar?
+
+### "Tudo o que fizer sentido testar!" é um felling do que precisa ser testado
+
+- Se possue a possibilidade de quebrar algo, é algo testavel
+- Se e documentavel, é testavel
+- Devo deixar um comentario? entao isso e testavel! Escrevo um teste no lugar!
+
+## Piramide de testes
+
+### Os tipos mais comuns de testes
+
+- Unit tests (metodos por metodos)
+  - Metodo sem dependencias
+  - Metodo que fazem uma unica coisa
+- Integration Tests
+  - Metodos que interligam outros metodos (Unit tests por exemplo)
+- End to End(E2E) Tests
+  - Metodos de simulacao
+  - Usado em UI (tests GUI)
+  - Testa acao do usuario
+
+## Ferramentas para testes FRONTEND
+
+- Jest
+  - Test runner
+  - Localiza os arquivos e executa os testes
+  - Permite fazer mock e observar(watch de metodos e parametros) metodos em bibliotecas
+  - Permite fazer as assertions, tais como `expect().toBe()`
+- Cypress
+  - Framework de testes End to End
+  - Executa a aplicacao no browser, como se fosse o usuario
+  - Permite executar no Chrome, Firefox, Edge e Eletron
+  - Uma ferramenta completa, nao precisa ser usada com Jest
+
+## Bibliotecas Para auxiliar as ferramentas FRONTEND
+
+- Testing Library
+  - Biblioteca
+  - Prove utilitarios para montar componentes(React, Vue, Svelte...)
+  - Oferece ferramentas para interagir com componentes como se fosse o usuario
+  - Trabalha em conjunto com Jest
+  - Faz o mesmo papel Enzyme e Vue-test-utils
+- Enzyme
+  - Biblioteca
+  - Prove utilitarios para montar componentes React
+  - Oferece ferramentas para interagir com componentes como se fosse o usuario
+  - Permite manejar state e testar detalhes de implmentacao \*
+  - Trabalha em conjunto com Jest
+  - Faz o mesmo papel Testing Library e Vue-test-utils
+- Vue Test Utils
+  - Biblioteca
+  - Prove utilitarios para montar componentes Vuejs
+  - Oferece ferramentas para interagir com componentes como se fosse o usuario
+  - Permite manejar state e testar detalhes de implmentacao \*
+  - Trabalha em conjunto com Jest
+  - Faz o mesmo papel Testing Library e Enzyme
+
+## CI/CD
+
+### O PAPEL DOS TESTES NO DEPLOY MODERNO
+
+- Os testes sao integrados ao processo Continuous Integration / Continuous Delivery e sao
+  fundamentais para que estes existam
+  - Github Actions
+  - CircleCI
+
+## TDD
+
+### Test Driven Development
+
+- Write a failing test -> Make the test pass -> Refactor
+
+- Melhora a implementacao (a melhor maneira de fazer a cada ciclo)
+- Facilita implementacoes mais simples
+- Facilita a escrita dos testes
+- A oportunidade de tomar nota na hora q esta fazendo a implementacao
+- Detalhes implementacao frescos na mente, cobrir todas as situacoes TDD ajuda nessa progrecao
+- Menor tempo dedicado a bug fixing, os testes sao preventivos
+- Curva de aprendizado
+- Maior tempo de desenvolvimento
+- Dificil de vender ao time de produtos
