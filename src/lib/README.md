@@ -27,3 +27,19 @@
 - Foi refatorado o arquivo `queryString.js`
 
 - Metodo coverage, para verificar a cobertura dos testes no projeto `pnpm test --coverage || pnpm jest --coverage ` Statemants, Branch (Expressoes condicionais), Funcoes e linhas
+
+- Feito a criacao de arquivo `Cart.js` e `Cart.spec.js` para praticar o TDD de forma mais complexa
+- Foi criado o `beforeEach(() => {})` funcao que e executada antes dos testes
+
+- Foi add a biblioteca `lodash.js` para utilizar dos metodos de add e remover itens do carrinho
+
+- Foi criado um `describe('getTotal()')` dentro do `describe('Cart')` para separar os testes especificos de getTotal()
+- Foi utilizado o metodo `toMatchInlineSnapshot()` para criação de expect object(output), o Snapshot cria uma string, foi feito tambem a modificação dos parametros do produto, o `toMatchInlineSnapshot()` mostra error e a modificacao que foi feita, para atualizar ussamos o parametro `U` update do `--watchAll`
+- Foi mostrado uma alternativa para arquivos grandes do snapshot `toMatchSnapshot()` só que esse e criado uma pasta `_snapshots` com o arquivo exportando o expect object(output)
+- Foi criado um metodo novo chamado summary()
+- Foi utlizado o metodo `expect().toBeGreaterThan()` para verificar codincao maior que!
+- Foi add a biblioteca dinero.js para utilizar metodos para tratar com valores de dinheiro
+
+- Usado o metodo `fit()` do jest para rodar apenas o `f + it()` em questao
+
+- instalado o ndb node.js para debugar,
